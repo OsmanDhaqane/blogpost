@@ -7,4 +7,7 @@
         justify-content: space-between;
         align-items: center;
     }
+    #main-nav .nav-container ul {
+        display: flex;
+    }
 }

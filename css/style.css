@@ -37,11 +37,6 @@ body {
 
 #main-nav .nav-container {
     text-align: center;
-    padding: 1rem 0;
-}
-
-#main-nav .nav-container ul {
-    margin: 2rem 0;
 }
 
 #main-nav .nav-container ul li a {
@@ -52,10 +47,6 @@ body {
 #main-nav .nav-container .social a {
     margin: 0 0.3rem;
     display: inline-block;
-}
-
-#main-nav .nav-container ul li a {
-    padding: 1rem;
 }
 
 #main-nav .nav-container ul li a:hover {
