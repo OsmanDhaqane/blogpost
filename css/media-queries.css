@@ -16,6 +16,15 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
     }
+    #blog .blog-container>*:first-child {
+        grid-column: 1 / span 2;
+    }
+    #blog .blog-container>*:last-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        grid-column: 1 / span 3;
+    }
 }
 
 
@@ -32,5 +41,13 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
+    }
+    /* hide the social icons */
+    #main-nav .social {
+        display: none;
+    }
+    /* header content */
+    #showcase .showcase-content {
+        max-width: 300px;
     }
 }

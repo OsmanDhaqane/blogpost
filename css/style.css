@@ -133,3 +133,39 @@ body {
 #blog .blog-container {
     margin: 1rem;
 }
+
+#blog a {
+    color: var(--secondary-color);
+}
+
+#blog .blog-container p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* Footer Styling */
+
+#main-footer {
+    padding: 5rem;
+}
+
+#main-footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Social links & icons Styling */
+
+#main-footer a {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+#main-footer i {
+    margin-bottom: 2rem;
+}
