@@ -10,18 +10,27 @@
     #main-nav .nav-container ul {
         display: flex;
     }
+    /* blog container Grid Code Below here */
+    #blog .blog-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
 }
 
+
 /* On Mobile logo */
+
 @media (max-width: 768px) {
     #main-nav .logo {
         margin-bottom: 1.5rem;
     }
-
     #main-nav .social {
         margin-bottom: 0.5rem;
-        
     }
-
-    
+    #blog .blog-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }
