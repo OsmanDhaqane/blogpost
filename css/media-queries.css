@@ -19,6 +19,7 @@
     #blog .blog-container>*:first-child {
         grid-column: 1 / span 2;
     }
+    /* last article nested grid */
     #blog .blog-container>*:last-child {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
