@@ -1,0 +1,21 @@
+/* container  */
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    width: 100%;
+}
+
+
+/* links styling */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.current

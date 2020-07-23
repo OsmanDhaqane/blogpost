@@ -32,7 +32,10 @@ body {
 
 #main-nav {
     background: var(--primary-color);
-    padding: 1rem;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 #main-nav .nav-container {
@@ -51,4 +54,25 @@ body {
 
 #main-nav .nav-container ul li a:hover {
     background: var(--secondary-color);
+}
+
+
+/* Header Styling */
+
+#showcase {
+    background-image: url("../images/blog.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
 }

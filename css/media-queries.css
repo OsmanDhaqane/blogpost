@@ -11,3 +11,17 @@
         display: flex;
     }
 }
+
+/* On Mobile logo */
+@media (max-width: 768px) {
+    #main-nav .logo {
+        margin-bottom: 1.5rem;
+    }
+
+    #main-nav .social {
+        margin-bottom: 0.5rem;
+        
+    }
+
+    
+}
