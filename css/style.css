@@ -1,6 +1,14 @@
 /* import google fonts open sans */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* CSS Files Import */
+
+@import "./media-queries.css";
+@import "./utilities.css";
+
+/* variables */
+
 :root {
     --primary-color: #0a2a66;
     --secondary-color: #1865f2;
