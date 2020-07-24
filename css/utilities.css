@@ -65,6 +65,17 @@ ul {
 
 /* Buttons */
 
+.btn {
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: 0.3rem;
+}
+
+.btn:hover {
+    transition: 0.1s;
+    opacity: 0.8;
+}
+
 .btn-primary {
     background: var(--primary-color);
     color: #fff;
@@ -93,10 +104,10 @@ ul {
 
 .blog-post {
     display: inline-block;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: #fff;
-    font-size: 1rem;
-    text-transform: capitalize;
+    font-size: 0.7rem;
+    text-transform: uppercase;
     padding: 0.4rem 0.6rem;
     border-radius: 15px;
     margin-bottom: 0.5rem;
@@ -110,4 +121,33 @@ ul {
     height: 200px;
     object-fit: cover;
     width: 100%;
+}
+
+
+/* Blog, post & about page Container Styling utilities*/
+
+#blog .blog-container,
+#about .about-container,
+#post .post-container {
+    margin: 1rem;
+}
+
+
+/* Blog section & about pages paragraphs styling */
+
+#blog .blog-container p,
+#about .about-container p,
+#post .post-container {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* post page Meta */
+
+#post .meta {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0.6rem 0;
 }

@@ -45,6 +45,7 @@ body {
 #main-nav .nav-container ul li a {
     display: inline-block;
     padding: 0.7rem;
+    font-weight: bold;
 }
 
 #main-nav .nav-container .social a {
@@ -54,6 +55,12 @@ body {
 
 #main-nav .nav-container ul li a:hover {
     background: var(--secondary-color);
+    color: #fff;
+}
+
+#main-nav ul li a.current {
+    background: rgb(238, 238, 238);
+    color: var(--primary-color);
 }
 
 
@@ -122,32 +129,85 @@ body {
 
 /* Blog Section Styling */
 
-#blog h2 {
+#blog h2,
+#about h2 {
     margin: 1rem;
-    color: #333;
-}
-
-
-/* Blog Container Styling */
-
-#blog .blog-container {
-    margin: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.63rem;
+    text-transform: uppercase;
 }
 
 #blog a {
     color: var(--secondary-color);
 }
 
-#blog .blog-container p {
-    font-size: 1.1rem;
-    font-weight: 500;
+
+/* About Styling */
+
+#about aside,
+#post aside {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+#about .about-container p {
+    margin: 1rem;
+}
+
+
+/* About & Post Page Styling */
+
+#about aside input[type="email"],
+#post aside input[type="email"] {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+#about aside input[type="submit"],
+#post aside input[type="submit"] {
+    width: 90%;
+}
+
+
+/* Post Page Styling */
+
+#post h3 {
+    margin: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.63rem;
+    text-transform: uppercase;
+}
+
+
+/* Targeting lists */
+
+.list {
+    padding: 1rem;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #fff dotted 1px;
+    width: 90%;
+}
+
+.list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.list li a:hover {
+    color: #f99500;
 }
 
 
 /* Footer Styling */
 
 #main-footer {
-    padding: 5rem;
+    height: 200px;
 }
 
 #main-footer .footer-container {

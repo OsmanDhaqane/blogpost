@@ -1,6 +1,7 @@
 /* queries for larger screen */
 
 @media (min-width: 768px) {
+    /* Navbar */
     #main-nav .nav-container {
         display: flex;
         flex-direction: row;
@@ -16,7 +17,11 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
     }
+    /* first article nested grid */
     #blog .blog-container>*:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
         grid-column: 1 / span 2;
     }
     /* last article nested grid */
@@ -26,19 +31,35 @@
         grid-gap: 1rem;
         grid-column: 1 / span 3;
     }
+    /* About & Post Page  Styling*/
+    #about .about-container,
+    #post .post-container {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        grid-gap: 1rem;
+    }
+    /* Targeting first child of card container in post & about page*/
+    #about .about-container .card:nth-child(1),
+    #post .post-container .card:nth-child(1) {
+        grid-row: 1 / span 3;
+    }
 }
 
 
 /* On Mobile logo */
 
 @media (max-width: 768px) {
+    /* navbar */
     #main-nav .logo {
         margin-bottom: 1.5rem;
     }
     #main-nav .social {
         margin-bottom: 0.5rem;
     }
-    #blog .blog-container {
+    /* Blog , Post & About page styling*/
+    #blog .blog-container,
+    #about .about-container,
+    #post .post-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
